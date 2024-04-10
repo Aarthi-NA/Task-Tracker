@@ -1,0 +1,120 @@
+body {
+    background-image: url("https://www.getharvest.com/hs-fs/hubfs/resources/harvest-gif-motivate.gif?width=720&name=harvest-gif-motivate.gif");
+  }
+.div-form{
+    float:absolute;
+    margin-left: 200px;
+    background-color:antiquewhite;
+    width: 67%;
+    margin: 20px auto; 
+    padding: 20px; 
+    border: 1px solid #ccc;
+    border-radius: 5px; 
+}
+#form-container {
+    background-color:antiquewhite;
+    width: 67%; 
+    margin: 20px auto;
+    padding: 20px; 
+    border: 1px solid #ccc; 
+    border-radius: 5px;
+}
+.table {
+    margin: 20px auto;
+    width: 70%; 
+    border-collapse: collapse;
+    border: 1px solid #000; 
+}
+
+.table th, .table td {
+    border: 1px solid black;
+    padding: 8px;
+    background-color:antiquewhite;
+}
+#form-entry label {
+    display: block; 
+    margin-bottom: 5px; 
+}
+
+#form-entry input[type="text"], #form-entry select {
+    width: calc(100% - 10px);
+    padding: 8px; 
+    margin-bottom: 10px; 
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+}
+
+#form-entry input[type="submit"] {
+    background-color: #007bff; 
+    color: #fff; 
+    padding: 10px 20px; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer;
+}
+
+#form-entry input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+
+.stopwatch {
+    font-size: 18px; 
+    margin-bottom: 10px; 
+}
+
+
+.table button {
+    padding: 6px 12px; 
+    margin-right: 5px; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+
+}
+.table button:nth-child(odd) {
+    background-color: #007bff; 
+    color: #fff; 
+}
+
+
+.table button:nth-child(even) {
+    background-color: #ff0000; 
+    color: #fff; 
+}
+.table button:hover {
+    opacity: 0.8; 
+}
+
+#login-container, #signup-container{
+    background-color:antiquewhite;
+    width: 30%; 
+    margin: 20px auto;
+    padding: 20px; 
+    border: 1px solid #000000; 
+    border-radius: 5px;
+}
+#login-btn, #signup-btn{
+    padding: 6px 12px; 
+    margin-right: 5px; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer;
+    align-self: center; 
+    color: white;
+    background-color: #007bff; 
+}
+#login-form input[type="text"],[type="password"]{
+    width: calc(100% - 10px);
+    padding: 8px; 
+    margin-bottom: 10px; 
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+}
+#signup-form input[type="text"],[type="password"],[type="email"]{
+    width: calc(100% - 10px);
+    padding: 8px; 
+    margin-bottom: 10px; 
+    border: 1px solid #ccc; 
+    border-radius: 5px;
+}

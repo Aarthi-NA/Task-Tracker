@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BT day 1</title>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+    </style>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <header>
+        <h1 style="text-align:center;">TASK TRACKER</h1>
+      </header>
+    <div id ="table-div">
+        <div class="div-form">
+            <form id="new-entry">
+                <label for="filter">Filter: </label>
+                <select id="filter" title="Filter">
+                    <option value="all">All</option>
+                    <option value="Work">Work</option>
+                    <option value="Personal Space">Personal Space</option>
+                </select>
+                <br>
+            </form>
+        </div>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Category</th>
+                <th>Sub-Category</th>
+                <th>Duration</th>
+                <th>Task</th>
+                <th>Tools</th>
+            </tr>
+        </thead>
+        <tbody class="table-body">
+            <tr>
+                <td>Work </td>
+                <td>Meeting </td>
+                <td>00:40:21 </td>
+                <td>Client Meeting </td>
+                <td>
+                    <button onclick="updateRow(this)">Update</button>
+                    <button onclick="deleteRow(this)">Delete</button>
+                </td>
+            </tr>
+            <tr>
+                <td>Personal Space  </td>
+                <td>painting</td>
+                <td>00:26:21  </td>
+                <td>- </td>
+                <td>
+                    <button onclick="updateRow(this)">Update</button>
+                    <button onclick="deleteRow(this)">Delete</button>
+                </td>
+            </tr>
+            <tr>
+                <td>Work   </td>
+                <td>Project  </td>
+                <td>01:30:21</td>
+                <td>Mail</td>
+                <td>
+                    <button onclick="updateRow(this)">Update</button>
+                    <button onclick="deleteRow(this)">Delete</button>
+                </td>
+            </tr>
+            <tr>
+                <td>Personal Space</td>
+                <td>Exercise </td>
+                <td>01:10:34 </td>
+                <td>Running  </td>
+                <td>
+                    <button onclick="updateRow(this)">Update</button>
+                    <button onclick="deleteRow(this)">Delete</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<div id = form-container>
+    <h2 style="text-align:center;">START A NEW TASK</h2>
+    <form id="form-entry">
+        <label for="category"><strong>Category:</strong></label>
+        <select id="category" name="category" title="Category">
+            <option value="Work">Work</option>
+            <option value="Personal Space">Personal Space</option>
+        </select>
+        <br><br>
+        <label for="subCategory"><strong>Sub-Category:</strong></label>
+        <input type="text" id="subCategory" name="subCategory" placeholder="Sub-Category" required>
+        <br><br>
+        <label for="duration"><strong>Duration:</strong></label>
+        <div class="stopwatch">00:00:00</div>
+        <button id="startstopbutton" type="button" onclick="startStopButton()">START</button>
+        <button id="resetButton" type="button" onclick="resetTimer()">Reset</button>
+        <br><br>
+        <label for="task"><strong>Task:</strong></label>
+        <input type="text" id="task" name="task" placeholder="Task Name" required>
+        <br><br>
+        <input type="submit" value="Submit">
+    </form>
+</div>
+    <script src="index.js"></script>
+</body>
+</html>
